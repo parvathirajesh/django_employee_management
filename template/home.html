@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="container mt-5 p-5 w-75 text-center border border-2 border-primary">
+<div class="text-center">
+        <h1 class="fw-bold text-primary">Employee Management System</h1>
+        <p class="lead mt-3">
+            Welcome to the Employee Management System. This application helps organizations
+            efficiently manage employee information such as adding new employees,
+            viewing employee details, and maintaining employee records in a structured way.
+        </p>
+
+        <p>
+            Using this system, administrators can easily store, update, and retrieve
+            employee data, making workforce management simple and organized.
+        </p>
+     <a href="{% url 'create' %}" class="btn btn-success mt-3 me-2">Add Employee</a>
+        <a href="{% url 'read' %}" class="btn btn-primary mt-3">View Employees</a>
+    </div>
+</div>
+{% endblock%}
